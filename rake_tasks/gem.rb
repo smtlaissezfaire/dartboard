@@ -14,11 +14,11 @@ begin
   Jeweler::Tasks.new do |gemspec|
     set_version_for_jewler
 
-    gemspec.name           = "the-perfect-gem"
-    gemspec.summary        = "Summarize your gem"
-    gemspec.description    = "Describe your gem"
+    gemspec.name           = "dartboard"
+    gemspec.summary        = "Randomly select values based on percentages"
+    gemspec.description    = "Randomly select values based on percentages"
     gemspec.email          = "scott@railsnewbie.com"
-    gemspec.homepage       = "http://github.com/smtlaissezfaire/the-perfect-gem"
+    gemspec.homepage       = "http://github.com/smtlaissezfaire/dartboard"
     gemspec.authors        = ["Scott Taylor"]
     gemspec.add_dependency "using", ">= 1.0.5"
   end
