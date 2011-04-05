@@ -1,10 +1,10 @@
-require File.expand_path(File.dirname(__FILE__) + "/../lib/prototype_project")
+require File.expand_path(File.dirname(__FILE__) + "/../lib/dartboard")
 
 begin
   require 'jeweler'
 
   def set_version_for_jewler
-    version = PrototypeProject::Version::STRING
+    version = Dartboard::Version::STRING
 
     File.open(File.expand_path(File.dirname(__FILE__) + "/../VERSION"), "w") do |f|
       f << version

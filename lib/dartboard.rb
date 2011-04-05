@@ -1,6 +1,6 @@
 require "using"
 
-module PrototypeProject
+module Dartboard
   extend Using
 
   using :Version
