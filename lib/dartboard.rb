@@ -6,14 +6,24 @@ module Dartboard
   using :Version
 
   def self.throw(hash_of_object_to_numbers, options={})
-    array = []
+    if options[:percentage]
+      dup_hash = hash_of_object_to_numbers.dup
 
-    hash_of_object_to_numbers.each do |obj, percentage|
-      1.upto(percentage.round) do
-        array.push(obj)
+      dup_hash.each do |key, value|
+        dup_hash[key] = value * 100
       end
-    end
 
-    array.sort_by { rand }[0]
+      throw(dup_hash, :percentage => false)
+    else
+      array = []
+
+      hash_of_object_to_numbers.each do |obj, percentage|
+        1.upto(percentage.round) do
+          array.push(obj)
+        end
+      end
+
+      array.sort_by { rand }[0]
+    end
   end
 end

@@ -24,5 +24,9 @@ describe Dartboard do
     it "should find nothing if values are less than 0.5" do
       Dartboard.throw({@obj1 => 0.44, @obj2 => 0.4}).should be_nil
     end
+
+    it "should find values less than 0.5 if :percentage => true is passed" do
+      Dartboard.throw({@obj1 => 0.44, @obj2 => 0.4}, :percentage => true).should_not be_nil
+    end
   end
 end
