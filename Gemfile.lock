@@ -5,7 +5,6 @@ GEM
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
     diff-lcs (1.1.2)
-    facets (2.9.1)
     git (1.2.5)
     jeweler (1.5.2)
       bundler (~> 1.0.0)
@@ -22,8 +21,6 @@ GEM
     rspec-mocks (2.0.0)
       rspec-core (= 2.0.0)
       rspec-expectations (= 2.0.0)
-    using (0.1.5)
-      facets
 
 PLATFORMS
   ruby
@@ -32,4 +29,3 @@ DEPENDENCIES
   autotest (>= 4.4.6)
   jeweler
   rspec (>= 2.0.0)
-  using (>= 0.1.5)

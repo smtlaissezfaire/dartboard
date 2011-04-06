@@ -1,9 +1,11 @@
-require "using"
-
 module Dartboard
-  extend Using
+  module Version
+    MAJOR = 0
+    MINOR = 1
+    TINY  = 0
 
-  using :Version
+    STRING = "#{MAJOR}.#{MINOR}.#{TINY}"
+  end
 
   def self.throw(hash_of_object_to_numbers, options={})
     if options[:percentage]
